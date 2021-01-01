@@ -37,6 +37,7 @@ nav li:hover {
     color: #64a74f;
 }
 
+/* Section styling */
 main {
     display: flex;
     justify-content: space-around;
@@ -72,6 +73,7 @@ main > section:nth-of-type(2) {
     flex-grow: 2;
 }
 
+/* Post Styling */
 .posts {
     display: flex;
     flex-direction: column;
@@ -90,6 +92,7 @@ main > section:nth-of-type(2) {
 
 .post-content {
     padding: 20px;
+    width: 200px;
     flex-grow: 1;
 }
 
@@ -129,55 +132,14 @@ main > section:nth-of-type(2) {
     border:rgb(231, 148, 162) solid 1px; 
 }
 
-/* Post Input */
-.post-input {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.post-input button {
-    /* font-size: 13pt; */
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border: none;
-    padding: 9px;
-    width: 100px;
-}
-
-button {
-    border-radius: 20px;
-    border: none;
-    padding: 15px;
-    background-color: pink
-}
-
-.critter-container button {
-    margin: 20px 20px;
-}
-
-.post-input input {
-    margin-right: 0;
-    border-radius: 20px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border: none;
-    padding: 10px;
-    padding-left: 15px;
-    border: 1px solid lightgrey;
-    width: 60%;
-}
-
-/* Comments */
-
 .post-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
+
+/* Post Comments */
 .post-comments {
     display: flex;
     flex-direction: column;
@@ -215,20 +177,50 @@ button {
     font-weight: lighter;
 }
 
+
+/* Post Input */
+.post-input {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.post-input button {
+    /* font-size: 13pt; */
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    padding: 9px;
+    width: 100px;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    background-color: pink
+}
+
+.post-input input {
+    margin-right: 0;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    border: 1px solid lightgrey;
+    width: 60%;
+}
+
 /* Profile */
 #current-user.profile-img {
     width: 120px;
     height: 120px;
     border-radius: 200px;
     background-image: url("./img/profile/human-profile.png");
-}
-
-#al .profile-img {
-    background-image: url("./img/profile/al-profile.png");
-}
-
-#alice .profile-img {
-    background-image: url("./img/profile/alice-profile.png");
 }
 
 .profile-img {
@@ -239,6 +231,17 @@ button {
     border-radius: 50px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Critterpedia Styling */
+.critter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.critter-container button {
+    margin: 20px 20px;
 }
 
 .loading {
@@ -254,12 +257,6 @@ button {
     border-radius: 20px;
 }
 
-.critter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .critter p, #recent-caught {
     text-transform: capitalize;
 }
@@ -268,16 +265,16 @@ button {
     background-color: white;
 }
 
+.critter-container img {
+    max-width: 100px;
+}
+
 .critter {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.critter-container img {
-    max-width: 100px;
 }
 
 /* utility classes */
@@ -296,5 +293,3 @@ button {
 .hidden {
     display: none;
 }
-
-

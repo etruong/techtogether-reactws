@@ -15,14 +15,13 @@ https://docs.google.com/presentation/d/1uU_hEHl_Gq7HnsM1agRdSkTbb0GVZHdMiRi7PD_T
     - app - contains pure HTML, CSS, JavaScript app
     - react-app - where you will build the react app
 
-# Instructions
+# Workshop Agenda
 
 ## Part I: NavBar / Header Component
 
-## Part II: Sidebar Profile Section
+## Part II: Post Section 
 
-## Part III: Post Section 
+## Part III: Profile Section
 
 ## PART IV: Critter Widget Component
-
 API: http://acnhapi.com/

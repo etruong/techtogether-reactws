@@ -1,8 +1,8 @@
 const currentUser = {
     id: 1234,
     profileImg: "human-profile.png",
-    name: "Janet the Villager",
-    lastCaught: "Sea Bass"
+    name: "Maya the Villager",
+    birthday: "June 13th",
 }
 
 const users = {
@@ -96,6 +96,15 @@ function main() {
     generatePosts();
     setInputFunctionality();
     setCritterpediaFunctionality();
+    setCurrentUserInfo();
+}
+
+function setCurrentUserInfo() {
+    const profileImg = document.querySelector("#current-user");
+    profileImg.style.backgroundImage = "url(\'./img/profile/" + currentUser.profileImg + "\')";
+    const profileDetails = document.querySelectorAll(".user-container li");
+    profileDetails[0].innerText = currentUser.name;
+    profileDetails[1].querySelector("span").innerText = currentUser.birthday;
 }
 
 function setCritterpediaFunctionality() {
@@ -116,6 +125,7 @@ function setCritterpediaFunctionality() {
     });
 }
 
+// Fetches and returns a random critter information from the AC API
 async function fetchRandomCritter() {
     let critterType = "fish";
     if (Math.round(Math.random()) === 1) {
@@ -124,11 +134,10 @@ async function fetchRandomCritter() {
     const randomId = Math.round(Math.random() * 50) + 1;
     let critter = fetch('https://acnhapi.com/v1/' + critterType + '/' + randomId)
     .then(function(data) {
-        console.log("finished")
         return data.json();
     })
     .catch(function() {
-        console.log("there was an error")
+        console.log("there was an error");
     });
     return critter;
 }
@@ -286,8 +295,4 @@ function sortByPostedDesc(postA, postB) {
 
 function sortByPostedAsc(postA, postB) {
     return sortByPostedDesc(postB, postA);
-}
-
-function showRandomCritter() {
-
 }
