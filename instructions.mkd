@@ -1,0 +1,28 @@
+# TechTogether Hackathon: Intro to React WS
+Hosted by: Elisa Truong
+
+Description: 
+This repo's purpose is a code along for the TechTogether Hackathon Introduction to React Workshop. This code-along is a general 
+Slides: 
+https://docs.google.com/presentation/d/1uU_hEHl_Gq7HnsM1agRdSkTbb0GVZHdMiRi7PD_TUSc/edit?usp=sharing 
+
+## Repo
+- Link: 
+- Branches
+    - master - your coding environment
+    - solution - contains complete react application
+- Folder Organization
+    - app - contains pure HTML, CSS, JavaScript app
+    - react-app - where you will build the react app
+
+# Instructions
+
+## Part I: NavBar / Header Component
+
+## Part II: Sidebar Profile Section
+
+## Part III: Post Section 
+
+## PART IV: Critter Widget Component
+
+API: http://acnhapi.com/

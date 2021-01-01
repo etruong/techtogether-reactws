@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crossing Paths</title>
+    <meta name="description" content="TechTogether into to React workshop" />
+    <meta name="author" content="your name here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+<header>
+    <h1>Crossing Paths</h1>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i></li>
+            <li><i class="fas fa-user-alt"></i></li>
+            <li><i class="fas fa-comment"></i></li>
+            <li><i class="fas fa-tools"></i></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div>
+            <div id="current-user" class="profile-img">&nbsp;</div>
+            <ul>
+                <li class="bold">Janet the Villager</li>
+                <li class="mt3">Birthday: June 12th</li>
+                <li>Post Made: <span id="post-count">0</span></li>
+                <li>Liked: <span id="like-count">0</span> Posts</li>
+                <li>Recently Caught: <br /><span id="recent-caught">Bass</span></li>
+            </ul>
+        </div>
+        <div class="critter-container">
+            <p class="bold">Critterpedia</p>
+            <div class="critter">&nbsp;</div>
+            <div class="loading hidden">&nbsp;</div>
+            <button id="critter-btn">Show me a critter</button>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-center">News Feed</h2>
+        <div class="post-input">
+            <input type="text" placeholder="How are you doing today?" />
+            <button id="post-btn" disabled>Post</button>
+        </div>
+        <div class="posts"> 
+            <!-- <div class="post-container">
+                <div class="post" id="al">
+                    <div class="profile-img">&nbsp;</div>
+                    <div class="post-content">
+                        <p class="bold">Al</p>
+                        <p>Yesterday</p>
+                        <p>Just did a million push ups today, feeling great!</p>
+                    </div>
+                    <div class="post-actions">
+                        <i class="fas fa-ellipsis-v"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+                <div class="post-comments">
+                    <div class="comment">
+                        <div class="profile-img">&nbsp;</div>
+                        <div class="comment-content">
+                            <p class="bold">Al</p>
+                            <p>I meant to say 2 million 😏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post" id="alice">
+                <div class="profile-img">&nbsp;</div>
+                <div class="post-content">
+                    <p class="bold">Alice</p>
+                    <p>December 20</p>
+                    <p>Felt cute, might delete later</p>
+                </div>
+                <img src="./img/post/alice-post.png" alt="alice selfie"/>
+                <div class="post-actions">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- JavaScript: -->
+    <script src="./index.js"></script>
+</main>
+
+
+</body>
+
+</html>
