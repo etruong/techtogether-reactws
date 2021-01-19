@@ -136,8 +136,8 @@ async function fetchRandomCritter() {
     .then(function(data) {
         return data.json();
     })
-    .catch(function() {
-        console.log("there was an error");
+    .catch(function(e) {
+        console.error(e);
     });
     return critter;
 }
